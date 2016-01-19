@@ -42,7 +42,7 @@ public class GridViewAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
 
         view = LayoutInflater.from(context).inflate(R.layout.item,null);
-        CheckBox checkBox = (CheckBox) view.findViewById(R.id.checkBox);
+        CustomView checkBox = (CustomView) view.findViewById(R.id.checkBox);
         checkBox.setBackgroundResource(list.get(i));
         return view;
     }

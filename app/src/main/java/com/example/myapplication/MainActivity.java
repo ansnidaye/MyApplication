@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                Log.d("MainActivity", "i:" + i);
+                CustomView customView = new CustomView(MainActivity.this);
             }
         });
     }
